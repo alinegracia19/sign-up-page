@@ -1,4 +1,5 @@
 const createAccountBtn = document.getElementById("sign-up");
+const formContainer = document.getElementById("form-container");
 const firstNameElement = document.getElementById("first-name");
 const lastNameElement = document.getElementById("last-name");
 const emailElement = document.getElementById("email");
@@ -58,5 +59,7 @@ createAccountBtn.addEventListener("click", () => {
     if (!firstNameElement.checkValidity() || !lastNameElement.checkValidity() || !emailElement.checkValidity() || !phoneNumberElement.checkValidity() || !passwordElement.checkValidity() || !confirmPasswordElement.checkValidity()) {
         notif.textContent = "Please enter the correct data";
         formContainer.appendChild(notif);
+    } else {
+        alert("Thank you for joining us!");
     }
 })

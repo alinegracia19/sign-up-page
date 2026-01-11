@@ -167,3 +167,14 @@ body {
     font-style: italic;
     margin-top: 10px;
 }
+
+ul {
+    display: none;
+    margin-left: 1.5rem;
+    color: var(--color4);
+}
+
+.valid {
+    color: var(--color1);
+    font-weight: bold;
+}

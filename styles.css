@@ -138,6 +138,14 @@ body {
     border-radius: 10px;
 }
 
+.row input:valid {
+    border-color: var(--color1);
+}
+
+.row input:invalid {
+    border-color: var(--color4);
+}
+
 #sign-up {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -152,4 +160,10 @@ body {
 #sign-up:hover {
     background-color: var(--color3);
     color: black;
+}
+
+.notif {
+    color: var(--color4);
+    font-style: italic;
+    margin-top: 10px;
 }
